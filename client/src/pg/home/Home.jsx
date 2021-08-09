@@ -6,9 +6,6 @@ export default function Home() {
                     <div>
                               <Topbar />
 
-                              <>
-                                        Jesus Is Lord!!!
-                              </>
                     </div>
           )
 }

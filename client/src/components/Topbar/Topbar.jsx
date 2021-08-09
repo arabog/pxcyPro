@@ -1,34 +1,43 @@
 import { Search } from "@material-ui/icons"
+import "./topbar.css"
 
 export default function Topbar() {
 
           return (
                     <div className="topbarContainer">
                               <div className="topbarLeft">
-                                        <div className="logo">Rx</div>
+                                        <div className="logoContainer">
+                                                  <img className="logo" src="/assets/img/logo.jpg" alt="" />
+                                        </div>
                               </div>
 
-                              <div className="topbarCenter">
-                                        <ul className="nav-item">
-                                                  <li className="nav-list">Home</li>
-                                                  <li className="nav-list">Pharmacist Page</li>
-                                                  <li className="nav-list">Sign out</li>
-                                        </ul>
+                              <div className="topbarCenter">     
+                                        <div className="searchBar">
+                                                            <Search  className="searchIcon"/>
+
+                                                            <input 
+                                                                      type="text" 
+                                                                      placeholder="Looking for drug(s)?" 
+                                                                      className="searchInput"
+                                                            />
+
+                                        </div>       
+                                                                      
+                                        <select name="" id="" className="selection" >
+                                                  <option value="price">Price</option>
+                                                  <option value="date">Date</option>
+                                                  <option value="location">Location</option>
+                                        </select>
                               </div>
                               
                               <div className="topbarRight">
+                                        
 
-                                        <div className="searchBar">
-                                                  <Search />
+                                        <ul className="signout">
+                                                  <li className="nav-list">Sign out</li>
+                                        </ul>
 
-                                                  <input 
-                                                            type="text" 
-                                                            placeholder="Looking for drug(s)" 
-                                                  />
-
-                                        </div>
-
-                                        <img className="userImg" src="assets/Babatunde" alt="" />
+                                        <img className="userImg" src="/assets/img/Babatunde1.png" alt="" />
                               </div>
                     </div>
           )
